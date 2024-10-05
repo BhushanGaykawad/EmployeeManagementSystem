@@ -15,5 +15,15 @@ namespace EmployeeManagementSystem.Model
 
         [Column("Password")]
         public String UserPassword { get;set;}
+
+        [Column("AccessToken")]
+        public  string ? AccessToken {  get;set;}
+
+        [Column("RefreshToken")]
+        public string ? RefreshToken { get; set; }
+
+        [Column ("RefreshTokenExpiry")]
+
+        public DateTime RefreshTokenExpiry { get; set; }
     }
 }

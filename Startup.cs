@@ -37,6 +37,8 @@ namespace EmployeeManagementSystem
             services.AddScoped<IEmployee,EmployeeRepositoryImpl>();
             services.AddScoped<ISuperUser,SuperUserRepositoryImpl>();
             services.AddScoped<IBlackListedToken, BlackListedTokenImplementation>();
+            services.AddScoped<IUserAuthService, UserAutorizationTokenImpl>();
+
 
             var key = Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]);
             services.AddAuthentication(options =>

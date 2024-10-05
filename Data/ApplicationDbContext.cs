@@ -13,7 +13,9 @@ namespace EmployeeManagementSystem.Data
         public DbSet<Employee> Employee { get; set; }
 
         public DbSet<SuperUserDetails> SuperUserDetails { get;set; }
-        public DbSet<BlackListedJWTToken>BlackListedJWTTokens { get; set; } 
+        public DbSet<BlackListedJWTToken>BlackListedJWTTokens { get; set; }
+
+        public DbSet<UserAuthorizationToken> UserTokens { get; set; } 
 
     }
 }

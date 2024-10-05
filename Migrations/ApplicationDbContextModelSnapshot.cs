@@ -140,6 +140,18 @@ namespace EmployeeManagementSystem.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SuperUserId"));
 
+                    b.Property<string>("AccessToken")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("AccessToken");
+
+                    b.Property<string>("RefreshToken")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("RefreshToken");
+
+                    b.Property<DateTime>("RefreshTokenExpiry")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("RefreshTokenExpiry");
+
                     b.Property<string>("UserName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)")
@@ -153,6 +165,36 @@ namespace EmployeeManagementSystem.Migrations
                     b.HasKey("SuperUserId");
 
                     b.ToTable("SuperUserDetails");
+                });
+
+            modelBuilder.Entity("EmployeeManagementSystem.Model.UserAuthorizationToken", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("AccessToken")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("ExpiresAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("RefreshToken")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("UserTokens");
                 });
 
             modelBuilder.Entity("EmployeeManagementSystem.Model.Employee", b =>

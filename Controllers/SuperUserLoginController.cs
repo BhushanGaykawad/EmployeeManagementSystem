@@ -22,7 +22,7 @@ namespace EmployeeManagementSystem.Controllers
 
 
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] SuperUserLoginDto loginDto)
+        public async Task<ActionResult> Login([FromBody] SuperUserLoginDto loginDto)
         {
             if (loginDto == null || string.IsNullOrEmpty(loginDto.Username) || string.IsNullOrEmpty(loginDto.Password))
             {
@@ -30,29 +30,37 @@ namespace EmployeeManagementSystem.Controllers
                 return BadRequest("Username and password are required.");
             }
 
-            var token=await _SuperUserrepository.Login(loginDto.Username, loginDto.Password);
-            if(token == null)
+            // Call the repository's Login method
+            var (accessToken, refreshToken) = await _SuperUserrepository.LogIn(loginDto.Username, loginDto.Password);
+
+            if (accessToken == null)
             {
-                _logger.LogInformation("Invalid username and Password.");
+                _logger.LogInformation("Invalid username or password.");
                 return Unauthorized("Invalid username or password.");
             }
 
-            return Ok(token);
-
-            /*
-            var superAdmin = _SuperUserrepository.Login(loginDto.Username, loginDto.Password);
-            if (superAdmin == null)
+            return Ok(new
             {
-                _logger.LogInformation("Invalid username and Password.");
-                return Unauthorized("Invalid username or password.");
-            }
-            return Ok(new { Message = "Login successful!" });
-            */
+                AccessToken = accessToken,
+                RefreshToken = refreshToken
+            });
+        
 
+
+        /*
+        var superAdmin = _SuperUserrepository.Login(loginDto.Username, loginDto.Password);
+        if (superAdmin == null)
+        {
+            _logger.LogInformation("Invalid username and Password.");
+            return Unauthorized("Invalid username or password.");
         }
+        return Ok(new { Message = "Login successful!" });
+        */
+
+    }
 
 
-        [HttpPost("logout")]
+    [HttpPost("logout")]
         public async Task<ActionResult> LogOut([FromBody] LogOutDTO logoutdto)
         {
             //var token = HttpContext.Request.Headers["Authorization"].ToString().Replace("Bearer","");
@@ -63,6 +71,57 @@ namespace EmployeeManagementSystem.Controllers
             var result=await _SuperUserrepository.Logout(logoutdto.Token);
             return Ok(result);
         }
+        /*
+        [HttpPost("refresh")]
+        public async Task<IActionResult> Refresh([FromBody] RefreshTokenDTO refreshTokenDto)
+        {
+            // Extract the JWT from the Authorization header
+            var token = HttpContext.Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+            try
+            {
+                var (newAccessToken, newRefreshToken) = await _SuperUserrepository.RefreshToken(token, refreshTokenDto.RefreshToken);
+                return Ok(new { AccessToken = newAccessToken, RefreshToken = newRefreshToken });
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                return Unauthorized(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("An error occurred while refreshing the token: " + ex.Message);
+            }
+        }
+        */
+        [HttpPost("refresh")]
+        public async Task<ActionResult> Refresh([FromBody] RefreshTokenDTO refreshTokenDto)
+        {
+           // _logger.LogInformation($"Refresh token retrieved is: {refreshTokenDto.RefreshToken}");
+
+            if (refreshTokenDto == null || string.IsNullOrEmpty(refreshTokenDto.RefreshToken))
+            {
+                _logger.LogInformation($"Refresh token retrieved is {refreshTokenDto.RefreshToken}");
+                return BadRequest("RefreshToken is required.");
+            }
+
+            var token = HttpContext.Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+            _logger.LogInformation($"Access token retrived from header is {token} and Refresh Token received from request body is{refreshTokenDto.RefreshToken}");
+            try
+            {
+
+                var (newAccessToken, newRefreshToken) = await _SuperUserrepository.RefreshToken(token, refreshTokenDto.RefreshToken);
+                return Ok(new { AccessToken = newAccessToken, RefreshToken = newRefreshToken });
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                return Unauthorized(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("An error occurred while refreshing the token: " + ex.Message);
+            }
+        }
+
+
 
 
     }

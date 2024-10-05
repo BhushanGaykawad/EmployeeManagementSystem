@@ -407,5 +407,21 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmployeeManagementSystem.Controllers.SuperUserLoginController",
+    "Method": "Refresh",
+    "RelativePath": "api/SuperUserLogin/refresh",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "refreshTokenDto",
+        "Type": "EmployeeManagementSystem.DTO.RefreshTokenDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

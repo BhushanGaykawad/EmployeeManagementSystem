@@ -9,6 +9,8 @@ using System.Text;
 using System.Security.Claims;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
+using Azure.Core;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace EmployeeManagementSystem.RepositoryImpl
 {
@@ -16,21 +18,28 @@ namespace EmployeeManagementSystem.RepositoryImpl
     {
         public readonly ApplicationDbContext _context;
         public readonly IBlackListedToken _blackListedToken;
-        
-        
-        public SuperUserRepositoryImpl(ApplicationDbContext context,IBlackListedToken blackListedToken)
+        public readonly ILogger<ISuperUser> _logger;
+        private readonly IUserAuthService  _tokenService;
+
+
+        public SuperUserRepositoryImpl(ApplicationDbContext context,IBlackListedToken blackListedToken,ILogger<ISuperUser> logger,IUserAuthService tokenService)
         {
             _context = context;
             _blackListedToken = blackListedToken;
+            _logger = logger;
+            _tokenService = tokenService;
         }
-        public async Task<string> Login(string username, string password)
+   
+
+        private string GenerateRefreshToken()
         {
-            var user = _context.SuperUserDetails.SingleOrDefault(sa => sa.UserName == username);
-            if (user == null || !VerifiedPasswords(password, user.UserPassword))
+            // Generate a random string for the refresh token
+            using (var rng = new RNGCryptoServiceProvider())
             {
-                return null;
+                var tokenData = new byte[32];
+                rng.GetBytes(tokenData);
+                return Convert.ToBase64String(tokenData);
             }
-            return GenerateJWTToken(user);
         }
 
         public async Task SeedSuperUserAsync()
@@ -87,6 +96,67 @@ namespace EmployeeManagementSystem.RepositoryImpl
         {
             await _blackListedToken.AddTokenToBlackListAsync(token);
             return "Successfully Logout.";
+        }
+        public async Task<(string newAccessToken,string newRefreshToken)>RefreshToken(String expiredToken,string refreshToken)
+        {
+            _logger.LogInformation($"Expired token received is {expiredToken} and refresh token received is{refreshToken}");
+            await _blackListedToken.AddTokenToBlackListAsync(expiredToken);
+            
+
+            var user=await _context.SuperUserDetails.SingleOrDefaultAsync(u=>u.RefreshToken==refreshToken);
+            if (user==null || user.RefreshTokenExpiry <DateTime.UtcNow)
+            {
+                
+                throw new UnauthorizedAccessException("Invalid or Expired refresh token");
+
+            }
+            var newAccessToken=GenerateJWTToken(user);
+            var newRefreshToken = Guid.NewGuid().ToString();
+
+            user.RefreshToken=newRefreshToken;
+            user.RefreshTokenExpiry=DateTime.UtcNow.AddHours(30);
+            await _context.SaveChangesAsync();
+            return(newAccessToken,newRefreshToken);
+         
+        }
+
+        public async Task<(string newAccessToken, string newRefreshToken)> LogIn(string username, string password)
+        {
+
+            var user = await _context.SuperUserDetails.SingleOrDefaultAsync(sa => sa.UserName == username);
+            if (user == null || !VerifiedPasswords(password, user.UserPassword))
+            {
+                return (null, null);
+            }
+
+            var accessToken = GenerateJWTToken(user);
+            var refreshToken = GenerateRefreshToken();
+
+            _logger.LogInformation($"Generated Access Token: {accessToken}");
+            _logger.LogInformation($"Generated Refresh Token: {refreshToken}");
+
+            user.AccessToken = accessToken;
+            user.RefreshToken = refreshToken; // Update refresh token
+            user.RefreshTokenExpiry = DateTime.UtcNow.AddHours(30);
+
+            _logger.LogInformation($"User before update: {user.UserName}, {user.AccessToken}, {user.RefreshToken}");
+
+            _context.SuperUserDetails.Update(user);
+            await _context.SaveChangesAsync();
+
+            try
+            {
+                await _tokenService.StoreTokensAsync(user.SuperUserId, accessToken, refreshToken);
+                _logger.LogInformation("Tokens updated successfully in the database");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Error storing tokens: {ex.Message}");
+            }
+
+            _logger.LogInformation("Tokens updated successfully in the database");
+
+            return (accessToken, refreshToken);
         }
     }
 }
