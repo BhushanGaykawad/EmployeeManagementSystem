@@ -104,7 +104,7 @@ namespace EmployeeManagementSystem.Controllers
             }
 
             var token = HttpContext.Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
-            _logger.LogInformation($"Access token retrived from header is {token} and Refresh Token received from request body is{refreshTokenDto.RefreshToken}");
+            _logger.LogInformation($"----------------------------++Access token retrived from header is {token} and Refresh Token received from request body is{refreshTokenDto.RefreshToken}");
             try
             {
 
