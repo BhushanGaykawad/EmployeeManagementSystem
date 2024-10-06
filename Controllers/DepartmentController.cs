@@ -110,7 +110,7 @@ namespace EmployeeManagementSystem.Controllers
             }
         }
 
-        [HttpDelete("id")]
+        [HttpDelete("{id}")]
         public async Task<ActionResult>DeleteDepartment(int id)
         {
             try

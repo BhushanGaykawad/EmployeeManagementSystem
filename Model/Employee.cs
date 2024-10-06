@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace EmployeeManagementSystem.Model
 {
@@ -30,14 +31,22 @@ namespace EmployeeManagementSystem.Model
         public int EmployeeRoleId { get; set; }
         
         [Column("DateOfJoining")]
-        public DateTime DateOfJoininig {  get; set; }
+        public DateTime DateOfJoining {  get; set; }
         
         [Column("EmployeeSalary")]
         public float EmployeeSalary { get; set; }
 
-
+        /*
+        [ForeignKey("EmployeeDepartmentId")]
         public Department Department { get; set; }
 
+        [ForeignKey("EmployeeRoleId")]
         public Role Role { get; set; }
+        */
+
+        [JsonIgnore]
+        public virtual Department? Department { get; set; }
+        [JsonIgnore]
+        public virtual Role? Role { get; set; }
     }
 }

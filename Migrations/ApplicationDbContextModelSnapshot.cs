@@ -73,7 +73,7 @@ namespace EmployeeManagementSystem.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EmployeeId"));
 
-                    b.Property<DateTime>("DateOfJoininig")
+                    b.Property<DateTime>("DateOfJoining")
                         .HasColumnType("datetime2")
                         .HasColumnName("DateOfJoining");
 

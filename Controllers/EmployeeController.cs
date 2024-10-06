@@ -14,20 +14,26 @@ namespace EmployeeManagementSystem.Controllers
     public class EmployeeController:ControllerBase
     {
         private readonly IEmployee _employeeRepository;
+        private readonly IDeparment _departmentRepository;
+        private readonly IRole _roleRepository;
         private readonly ILogger<EmployeeController> _logger;
         
-        public EmployeeController(IEmployee employeeRepository, ILogger<EmployeeController> logger)
+        public EmployeeController(IEmployee employeeRepository, ILogger<EmployeeController> logger,IDeparment deparment,IRole role)
         {
             _employeeRepository = employeeRepository;
             _logger = logger;
+            _departmentRepository = deparment;
+            _roleRepository = role;
         }
+
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Employee>>> GetAllEmployees()
         {
             try
             {
                 _logger.LogInformation("Fetching All Employees");
-                var employees=await _employeeRepository.GetAllEmployee();
+                var employees=await _employeeRepository.GetAllEmployeeWithDetails();
                 if(employees == null)
                 {
                     _logger.LogInformation("Employees fetched are null or no Employees found");
@@ -42,24 +48,47 @@ namespace EmployeeManagementSystem.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Employee>>GetEmployeeById(int eid)
+        public async Task<ActionResult<EmployeeDTO>> GetEmployeeById(int id)
         {
             try
             {
-                _logger.LogInformation($"Fetching employees with id :{eid}");
-                var employee= _employeeRepository.GetEmployeebyId(eid); 
-                if(employee == null)
+                _logger.LogInformation($"Fetching employee with id: {id}");
+                var employee = await _employeeRepository.GetEmployeebyId(id);
+
+                if (employee == null)
                 {
                     return NotFound();
                 }
-                return Ok(employee);
-            }catch (Exception ex) 
+                var deptId=employee.EmployeeDepartmentId;
+                _logger.LogInformation($"*****************{deptId}*************************");
+                var department = await _departmentRepository.GetDeparmentsById(employee.EmployeeDepartmentId);
+                var role = await _roleRepository.GetRoleById(employee.EmployeeRoleId);
+
+                var employeeDTO = new EmployeeDTO
+                {
+                    EmployeeId = employee.EmployeeId,
+                    EmployeeName = employee.EmployeeName,
+                    EmployeeEmail = employee.EmployeeEmail,
+                    EmployeePhoneNumber = employee.EmployeePhoneNumber,
+                    EmployeeDepartmentId = employee.EmployeeDepartmentId,
+                    DepartmentName = department?.DepartmentName,  
+                    EmployeeRoleId = employee.EmployeeRoleId,
+                    RoleType = role?.RoleType,  
+                    DateOfJoining = employee.DateOfJoining,
+                    EmployeeSalary = employee.EmployeeSalary
+                };
+
+                return Ok(employeeDTO);
+            }
+            catch (Exception ex)
             {
-                _logger.LogError("Error While fetching employee");
-                throw new CustomizedException("Error While fetching employee", ex);
+                _logger.LogError("Error while fetching employee: {0}", ex.Message);
+                return StatusCode(500, "Internal server error");
             }
         }
-        [HttpPost]
+
+
+    [HttpPost]
         public async Task<ActionResult<Employee>> CreateNewEmployee([FromBody] Employee emp)
         {
             if(emp == null)
@@ -101,17 +130,17 @@ namespace EmployeeManagementSystem.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult<bool>> DeleteEmployee(int eid)
+        public async Task<ActionResult<bool>> DeleteEmployee(int id)
         {
             try
             {
-                _logger.LogInformation($"Deleting Employee from Employee entity with id:{eid}");
-                var result= await _employeeRepository.DeleteEmployee(eid);
+                _logger.LogInformation($"Deleting Employee from Employee entity with id:{id}");
+                var result= await _employeeRepository.DeleteEmployee(id);
                 return Ok(result);
             }
             catch ( Exception ex)
             {
-                _logger.LogInformation($"Error while deleting employee with id:{eid}");
+                _logger.LogInformation($"Error while deleting employee with id:{id}");
                 throw new CustomizedException("Error while deleting employee",ex);
             }
         }

@@ -3,54 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|c:\\users\\lenovo\\onedrive\\desktop\\vita tech course\\.net\\practice\\employeemanagementsystem\\repositoryimpl\\superuserrepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|solutionrelative:repositoryimpl\\superuserrepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Migrations\\20241006120546_ok1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241006120546_ok1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|c:\\users\\lenovo\\onedrive\\desktop\\vita tech course\\.net\\practice\\employeemanagementsystem\\controllers\\superuserlogincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|solutionrelative:controllers\\superuserlogincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|c:\\users\\lenovo\\onedrive\\desktop\\vita tech course\\.net\\practice\\employeemanagementsystem\\model\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|solutionrelative:model\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__ProjectModels/EmployeeManagement/True/SqlTable/dbo.SuperUserDetails.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|c:\\users\\lenovo\\onedrive\\desktop\\vita tech course\\.net\\practice\\employeemanagementsystem\\repositoryimpl\\employeerepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|solutionrelative:repositoryimpl\\employeerepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__ProjectModels/EmployeeManagement/True/SqlTable/dbo.UserTokens.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|c:\\users\\lenovo\\onedrive\\desktop\\vita tech course\\.net\\practice\\employeemanagementsystem\\model\\userauthrizationtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|solutionrelative:model\\userauthrizationtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Migrations\\20241005073913_NewMG.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241005073913_NewMG.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|c:\\users\\lenovo\\onedrive\\desktop\\vita tech course\\.net\\practice\\employeemanagementsystem\\repositoryimpl\\userautorizationtokenimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|solutionrelative:repositoryimpl\\userautorizationtokenimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Migrations\\20241005071551_TokenEntity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241005071551_TokenEntity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Migrations\\20241006120232_ok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241006120232_ok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|c:\\users\\lenovo\\onedrive\\desktop\\vita tech course\\.net\\practice\\employeemanagementsystem\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|solutionrelative:startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|c:\\users\\lenovo\\onedrive\\desktop\\vita tech course\\.net\\practice\\employeemanagementsystem\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|solutionrelative:controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|c:\\users\\lenovo\\onedrive\\desktop\\vita tech course\\.net\\practice\\employeemanagementsystem\\repositoryimpl\\departmentrepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|solutionrelative:repositoryimpl\\departmentrepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|c:\\users\\lenovo\\onedrive\\desktop\\vita tech course\\.net\\practice\\employeemanagementsystem\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|solutionrelative:controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|c:\\users\\lenovo\\onedrive\\desktop\\vita tech course\\.net\\practice\\employeemanagementsystem\\repository\\iemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|solutionrelative:repository\\iemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|c:\\users\\lenovo\\onedrive\\desktop\\vita tech course\\.net\\practice\\employeemanagementsystem\\model\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|solutionrelative:model\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|c:\\users\\lenovo\\onedrive\\desktop\\vita tech course\\.net\\practice\\employeemanagementsystem\\dto\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|solutionrelative:dto\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|c:\\users\\lenovo\\onedrive\\desktop\\vita tech course\\.net\\practice\\employeemanagementsystem\\model\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|solutionrelative:model\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|c:\\users\\lenovo\\onedrive\\desktop\\vita tech course\\.net\\practice\\employeemanagementsystem\\repository\\iuserauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|solutionrelative:repository\\iuserauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|c:\\users\\lenovo\\onedrive\\desktop\\vita tech course\\.net\\practice\\employeemanagementsystem\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|c:\\users\\lenovo\\onedrive\\desktop\\vita tech course\\.net\\practice\\employeemanagementsystem\\model\\superuserdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|solutionrelative:model\\superuserdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|c:\\users\\lenovo\\onedrive\\desktop\\vita tech course\\.net\\practice\\employeemanagementsystem\\repository\\isuperuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C209E308-18DD-4727-A968-B70F73DC04D9}|EmployeeManagementSystem.csproj|solutionrelative:repository\\isuperuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -60,8 +62,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "Controllers\\EmployeeController.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAA2wB0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T12:29:41.711Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20241006120546_ok1.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Migrations\\20241006120546_ok1.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241006120546_ok1.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Migrations\\20241006120546_ok1.cs",
+              "RelativeToolTip": "Migrations\\20241006120546_ok1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T12:05:46.768Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -80,69 +109,132 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "20241005073913_NewMG.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Migrations\\20241005073913_NewMG.cs",
-              "RelativeDocumentMoniker": "Migrations\\20241005073913_NewMG.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Migrations\\20241005073913_NewMG.cs",
-              "RelativeToolTip": "Migrations\\20241005073913_NewMG.cs",
+              "DocumentIndex": 3,
+              "Title": "20241006120232_ok.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Migrations\\20241006120232_ok.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241006120232_ok.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Migrations\\20241006120232_ok.cs",
+              "RelativeToolTip": "Migrations\\20241006120232_ok.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T07:39:13.73Z",
+              "WhenOpened": "2024-10-06T12:02:32.326Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "dbo.UserTokens [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/EmployeeManagement/True/SqlTable/dbo.UserTokens.sql",
-              "ToolTip": "dbo.UserTokens [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-10-05T07:21:21.994Z",
+              "DocumentIndex": 6,
+              "Title": "DepartmentRepositoryImpl.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\RepositoryImpl\\DepartmentRepositoryImpl.cs",
+              "RelativeDocumentMoniker": "RepositoryImpl\\DepartmentRepositoryImpl.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\RepositoryImpl\\DepartmentRepositoryImpl.cs",
+              "RelativeToolTip": "RepositoryImpl\\DepartmentRepositoryImpl.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAgwCcAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T14:51:28.157Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "20241005071551_TokenEntity.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Migrations\\20241005071551_TokenEntity.cs",
-              "RelativeDocumentMoniker": "Migrations\\20241005071551_TokenEntity.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Migrations\\20241005071551_TokenEntity.cs",
-              "RelativeToolTip": "Migrations\\20241005071551_TokenEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DepartmentController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "Controllers\\DepartmentController.cs",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAowHAAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T07:15:51.349Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-05T14:51:21.272Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "IEmployee.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Repository\\IEmployee.cs",
+              "RelativeDocumentMoniker": "Repository\\IEmployee.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Repository\\IEmployee.cs",
+              "RelativeToolTip": "Repository\\IEmployee.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T12:22:43.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Model\\Department.cs",
+              "RelativeDocumentMoniker": "Model\\Department.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Model\\Department.cs",
+              "RelativeToolTip": "Model\\Department.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T12:10:45.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Model\\Role.cs",
+              "RelativeDocumentMoniker": "Model\\Role.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Model\\Role.cs",
+              "RelativeToolTip": "Model\\Role.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T12:09:52.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EmployeeDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\DTO\\EmployeeDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\EmployeeDTO.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\DTO\\EmployeeDTO.cs",
+              "RelativeToolTip": "DTO\\EmployeeDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T12:04:46.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeRepositoryImpl.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\RepositoryImpl\\EmployeeRepositoryImpl.cs",
+              "RelativeDocumentMoniker": "RepositoryImpl\\EmployeeRepositoryImpl.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\RepositoryImpl\\EmployeeRepositoryImpl.cs",
+              "RelativeToolTip": "RepositoryImpl\\EmployeeRepositoryImpl.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAmwDEAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T11:57:41.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Model\\Employee.cs",
+              "RelativeDocumentMoniker": "Model\\Employee.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Model\\Employee.cs",
+              "RelativeToolTip": "Model\\Employee.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAqwDAAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T11:27:02.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Startup.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Startup.cs",
               "RelativeDocumentMoniker": "Startup.cs",
               "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Startup.cs",
               "RelativeToolTip": "Startup.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAzwCcAAABKAAAA",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAewGsAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-05T07:12:37.659Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserAutorizationTokenImpl.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\RepositoryImpl\\UserAutorizationTokenImpl.cs",
-              "RelativeDocumentMoniker": "RepositoryImpl\\UserAutorizationTokenImpl.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\RepositoryImpl\\UserAutorizationTokenImpl.cs",
-              "RelativeToolTip": "RepositoryImpl\\UserAutorizationTokenImpl.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T07:10:28.407Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "IUserAuthService.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Repository\\IUserAuthService.cs",
               "RelativeDocumentMoniker": "Repository\\IUserAuthService.cs",
@@ -150,96 +242,7 @@
               "RelativeToolTip": "Repository\\IUserAuthService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T07:09:48.451Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T07:08:12.675Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserAuthrizationToken.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Model\\UserAuthrizationToken.cs",
-              "RelativeDocumentMoniker": "Model\\UserAuthrizationToken.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Model\\UserAuthrizationToken.cs",
-              "RelativeToolTip": "Model\\UserAuthrizationToken.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T07:07:21.771Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "dbo.SuperUserDetails [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/EmployeeManagement/True/SqlTable/dbo.SuperUserDetails.sql",
-              "ToolTip": "dbo.SuperUserDetails [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-10-05T06:40:02.943Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "SuperUserDetails.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Model\\SuperUserDetails.cs",
-              "RelativeDocumentMoniker": "Model\\SuperUserDetails.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Model\\SuperUserDetails.cs",
-              "RelativeToolTip": "Model\\SuperUserDetails.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T06:37:33.661Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ISuperUser.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Repository\\ISuperUser.cs",
-              "RelativeDocumentMoniker": "Repository\\ISuperUser.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Repository\\ISuperUser.cs",
-              "RelativeToolTip": "Repository\\ISuperUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T06:37:29.846Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SuperUserRepositoryImpl.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\RepositoryImpl\\SuperUserRepositoryImpl.cs",
-              "RelativeDocumentMoniker": "RepositoryImpl\\SuperUserRepositoryImpl.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\RepositoryImpl\\SuperUserRepositoryImpl.cs*",
-              "RelativeToolTip": "RepositoryImpl\\SuperUserRepositoryImpl.cs*",
-              "ViewState": "AQIAABMAAAAAAAAAAAAswB8AAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T06:37:28.132Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SuperUserLoginController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Controllers\\SuperUserLoginController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SuperUserLoginController.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\VITA TECH course\\.NET\\Practice\\EmployeeManagementSystem\\Controllers\\SuperUserLoginController.cs",
-              "RelativeToolTip": "Controllers\\SuperUserLoginController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T06:37:25.878Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-05T07:09:48.451Z"
             }
           ]
         }

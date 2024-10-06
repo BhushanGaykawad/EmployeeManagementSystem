@@ -10,9 +10,12 @@ namespace EmployeeManagementSystem.RepositoryImplementations
     public class EmployeeRepositoryImpl : IEmployee
     {
         private readonly ApplicationDbContext _context;
-        public EmployeeRepositoryImpl(ApplicationDbContext context)
+        private readonly ILogger<EmployeeRepositoryImpl> _logger;
+        public EmployeeRepositoryImpl(ApplicationDbContext context,ILogger<EmployeeRepositoryImpl> logger)
         {
             _context = context;
+            _logger = logger;
+            
         }
         public async Task<Employee> CreateEmployee(Employee employee)
         {
@@ -32,11 +35,38 @@ namespace EmployeeManagementSystem.RepositoryImplementations
             await _context.SaveChangesAsync();
             return true;
         }
-
-        public async Task<IEnumerable<Employee>> GetAllEmployee()
+        public async Task<IEnumerable<EmployeeDTO>> GetAllEmployeeWithDetails()
         {
-            return await _context.Employee.ToListAsync();
+            var employees = await _context.Employee
+                .Include(e => e.Department)
+                .Include(e => e.Role)
+                .ToListAsync();
+
+            _logger.LogInformation($"*****************Number of employees fetched: {employees.Count()}*******************");
+
+            return employees.Select(e => new EmployeeDTO
+            {
+                EmployeeId = e.EmployeeId,
+                EmployeeName = e.EmployeeName,
+                EmployeeEmail = e.EmployeeEmail,
+                EmployeePhoneNumber = e.EmployeePhoneNumber,
+                EmployeeDepartmentId = e.EmployeeDepartmentId,
+                DepartmentName = e.Department.DepartmentName,
+                EmployeeRoleId = e.EmployeeRoleId,
+                RoleType = e.Role.RoleType,
+                DateOfJoining = e.DateOfJoining,
+                EmployeeSalary = e.EmployeeSalary
+            }).ToList();
         }
+
+
+
+        /* public async Task<IEnumerable<Employee>> GetAllEmployee()
+         {
+             return await _context.Employee.ToListAsync();
+         }
+        */
+
 
         public async Task<Employee> GetEmployeebyId(int employeeid)
         {
@@ -76,7 +106,7 @@ namespace EmployeeManagementSystem.RepositoryImplementations
 
             if (employeeUpdateDto.DateOfJoininig != default)
             {
-                existingEmployee.DateOfJoininig = employeeUpdateDto.DateOfJoininig;
+                existingEmployee.DateOfJoining = employeeUpdateDto.DateOfJoininig;
             }
             _context.Employee.Update(existingEmployee);
             await _context.SaveChangesAsync();

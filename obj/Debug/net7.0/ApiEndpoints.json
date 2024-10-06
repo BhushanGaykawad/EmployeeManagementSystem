@@ -105,7 +105,7 @@
   {
     "ContainingType": "EmployeeManagementSystem.Controllers.DepartmentController",
     "Method": "DeleteDepartment",
-    "RelativePath": "api/Department/id",
+    "RelativePath": "api/Department/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -113,7 +113,7 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -173,19 +173,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "eid",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
         "Name": "id",
-        "Type": "",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "EmployeeManagementSystem.Model.Employee",
+        "Type": "EmployeeManagementSystem.DTO.EmployeeDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -235,13 +230,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "eid",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
         "Name": "id",
-        "Type": "",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

@@ -79,6 +79,13 @@ namespace EmployeeManagementSystem
                         }
                     };
                 });
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowSpecificOrigin",
+                    builder => builder.WithOrigins("*") 
+                                      .AllowAnyMethod()
+                                      .AllowAnyHeader());
+            });
             services.AddAuthorization();
             services.AddControllers();
 
@@ -106,6 +113,7 @@ namespace EmployeeManagementSystem
                 var superUserRepository = scope.ServiceProvider.GetRequiredService<ISuperUser>();
                 superUserRepository.SeedSuperUserAsync().GetAwaiter().GetResult(); // Seed Super User
             }
+            app.UseCors("AllowSpecificOrigin");
 
             app.UseHttpsRedirection(); // Redirect HTTP to HTTPS
             app.UseRouting(); // Enable routing
